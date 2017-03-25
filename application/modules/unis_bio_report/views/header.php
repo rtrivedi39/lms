@@ -8,7 +8,7 @@
 		</div>		  
 	</div><!-- /.box-header -->
 	
-	<?php if( $this->session->userdata('emp_id') == 151 || (in_array(7, explode(',',$current_emp_section_id )) && ($userrole == 11  || $userrole == 8 || $userrole == 1))) {?>		
+	<?php if( $this->session->userdata('emp_id') == 151 || (in_array(7, explode(',',$current_emp_section_id )) && ($userrole == 11  || $userrole == 8 || $userrole == 7 || $userrole == 1))) {?>		
 	<div class="box-header bg-danger"> 
 	<h3 class="box-title"> रिपोर्ट अपलोड करें</h3>
 		<div class="row">
@@ -39,7 +39,7 @@
 				</form>
 				<?php } ?>
 
-				<?php if( in_array(7, explode(',',$current_emp_section_id )) && ($userrole == 11  || $userrole == 8 || $userrole == 7 || $userrole == 1)) {?>
+				<?php if( in_array(7, explode(',',$current_emp_section_id )) && ($userrole == 11  || $userrole == 8 || $userrole == 7 || $userrole == 4 || $userrole == 1)) {?>
 				<?php
 				 $attributes = array('class' => 'form-unis', 'id' => 'formnisreport', 'Content-Type' => 'application/x-www-form-urlencoded', 'enctype' => "multipart/form-data");
                 echo form_open('unis_bio_report/all_emp_absent_report', $attributes);
