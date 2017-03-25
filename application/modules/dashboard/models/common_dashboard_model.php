@@ -30,7 +30,8 @@ class Common_dashboard_model extends CI_Model {
 		$this->db->last_query();
 		return $rows;
 	}
-	public function getpendingFile()
+	
+	/*public function getpendingFile()
 	{
 		$totalfile = $this->getTotalFile();
 		$dispatchFile = $this->getDispatchFile();
@@ -72,6 +73,6 @@ class Common_dashboard_model extends CI_Model {
 		$rows = $query->result();
 		$this->db->last_query();
 		return $rows;
-	}
+	}*/
 }
 
