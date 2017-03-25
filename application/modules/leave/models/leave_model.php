@@ -1370,6 +1370,9 @@ class Leave_model extends CI_Model {
             $return = false;
         }
 		return $return;
+		
+		
+		
     } 
 
 	public function leave_log($leave_id){
